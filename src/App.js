@@ -11,7 +11,8 @@ import RegisterScreen from './screens/RegisterScreen'
 import ProfileScreen from './screens/ProfileScreen'
 import UserListScreen from './screens/UserListScreen'
 import UserEditScreen from './screens/UserEditScreen'
-
+import Protfolio from './dashboard/components/protfolio/Protfolio'
+import Watchlist from './dashboard/components/watchlist/Watchlist'
 const App = () => {
   return (
     <Provider store={store}>
@@ -23,6 +24,9 @@ const App = () => {
             <Route path='/register' component={RegisterScreen} />
             <Route path='/profile' component={ProfileScreen} />
             <Route path='/admin/userlist' component={UserListScreen} />
+            <Route path='/protfolio' component={Protfolio} />
+            <Route path='/watchlist' component={Watchlist} />
+            {/* <Route path='/sales' component={Sales} /> */}
             <Route path='/admin/user/:id/edit' component={UserEditScreen} />
           </Switch>
         </Layout>

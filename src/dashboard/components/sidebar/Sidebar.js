@@ -41,13 +41,17 @@ function Sidebar() {
         <div className='SidebarMenu'>
           <h3 className='sidebarTitle'>QuickMenu</h3>
           <ul className='sidebarList'>
+            <Link to='/protfolio'>
+              <li className='sidebarListItem'>
+                <PermIdentity />
+                Protfolio
+              </li>
+            </Link>
             <li className='sidebarListItem'>
-              <PermIdentity />
-              Users
-            </li>
-            <li className='sidebarListItem'>
-              <CreditCard />
-              Products
+              <Link to='/watchlist'>
+                <CreditCard />
+                WatchList
+              </Link>
             </li>
             <li className='sidebarListItem'>
               <AttachMoney />
@@ -55,7 +59,7 @@ function Sidebar() {
             </li>
             <li className='sidebarListItem'>
               <Assessment />
-              Reports
+              Individual Stock
             </li>
           </ul>
         </div>

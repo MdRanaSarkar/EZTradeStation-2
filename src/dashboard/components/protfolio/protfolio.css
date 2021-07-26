@@ -1,0 +1,104 @@
+.Protfolio{
+    flex:4
+}
+
+
+.protfolioContainer{
+    display:flex;
+}
+.protfolioShow{
+    flex:1;
+    padding:20px;
+    -webkit-box-shadow: inset 0px 0px 10px -10px #000000; 
+    box-shadow:  0px -1px 15px -10px #000000;
+}
+
+.protfolioUpdate{
+    flex:2;
+    padding:20px;
+    -webkit-box-shadow: inset 0px 0px 10px -10px #000000; 
+    box-shadow:  0px -1px 15px -10px #000000;
+
+}
+
+.protfolioprofileImage{
+    height:40px;
+    width:40px;
+    border-radius: 50%;
+    object-fit: cover;
+   
+}
+
+.protfolioShowTop{
+    display: flex;
+}
+
+.protfolioTitle{
+    display: flex;
+    flex-direction: column;
+    margin-left:20px;
+}
+.protfolioname{
+    font-weight: 600;
+}
+
+.protfolJobTitle{
+    font-weight: 300;
+}
+
+.ShowUserInfo{
+    display: flex;
+    align-items: center;
+    margin:20px 0px;
+    color:#444
+}
+.userNameTitle{
+    margin-left: 10px;
+}
+
+.protfolioUserShowButton{
+    margin-top: 20px;
+}
+.protTitleShow{
+    font-weight:300;
+}
+
+.userUpdateItem{
+    display: flex;
+    flex-direction:column;
+    margin-top: 10px;
+}
+
+.userUpdateItem>label{
+    margin-bottom:5px;
+    font-size:14px;
+}
+
+.userNameupInput{
+    border:none;
+    width:350px;
+    border-bottom: 1px solid grey;
+}
+.userupdatebutton{
+    margin-top:20px;
+    border-radius:5px;
+    border:none;
+    padding:5px;
+    cursor: pointer;
+    background-color:darkblue;
+    color:white;
+    font-weight:600;
+    width: 200px;
+    float: center;
+
+
+}
+.protUpdateTitle{
+    font-weight:600;
+    color:blue;
+    border-bottom: 1px solid
+    
+}
+.userUpdateForm{
+    margin-top: 20px;
+}
