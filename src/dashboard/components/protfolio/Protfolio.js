@@ -23,7 +23,7 @@ function Protfolio({ location, history }) {
   const dispatch = useDispatch()
 
   const userDetails = useSelector((state) => state.userDetails)
-  const { user } = userDetails
+  const { user,loading,error } = userDetails
 
   const userLogin = useSelector((state) => state.userLogin)
   const { userInfo } = userLogin
@@ -81,54 +81,60 @@ function Protfolio({ location, history }) {
               <MailOutline className='userShowicon' />
               <span className='userNameTitle'> {email} </span>
             </div>
-           
           </div>
         </div>
         <div className='protfolioUpdate'>
           <span className='protUpdateTitle'>Edit You Information</span>
-          <form className='userUpdateForm' onSubmit={submitHandler}>
-            <div className='userUpdateLeft'>
-              <div className='userUpdateItem'>
-                <label>Username</label>
-                <input
-                  type='text'
-                  placeholder='Username update'
-                  className='userNameupInput'
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                ></input>
-              </div>
-              <div className='userUpdateItem'>
-                <label>Email</label>
-                <input
-                  type='email'
-                  placeholder='Update Email'
-                  className='userNameupInput'
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                ></input>
-              </div>
-              <div className='userUpdateItem'>
-                <label>Password</label>
-                <input
-                  type='password'
-                  placeholder='Enter password'
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  className='userNameupInput'
-                ></input>
-              </div>
-              <div className='userUpdateItem'>
-                <label>Confirm Password</label>
-                <input
-                  type='password'
-                  placeholder='Confirm password'
-                  value={confirmPassword}
-                  onChange={(e) => setConfirmPassword(e.target.value)}
-                  className='userNameupInput'
-                ></input>
-              </div>
-              {/* <div className='userUpdateItem'>
+          {message && <Message variant='danger'>{message}</Message>}
+          {success && <Message variant='success'>Profile Updated</Message>}
+          {loading ? (
+            <Loader />
+          ) : error ? (
+            <Message variant='danger'>{error}</Message>
+          ) : (
+            <form className='userUpdateForm' onSubmit={submitHandler}>
+              <div className='userUpdateLeft'>
+                <div className='userUpdateItem'>
+                  <label>Username</label>
+                  <input
+                    type='text'
+                    placeholder='Username update'
+                    className='userNameupInput'
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                  ></input>
+                </div>
+                <div className='userUpdateItem'>
+                  <label>Email</label>
+                  <input
+                    type='email'
+                    placeholder='Update Email'
+                    className='userNameupInput'
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                  ></input>
+                </div>
+                <div className='userUpdateItem'>
+                  <label>Password</label>
+                  <input
+                    type='password'
+                    placeholder='Enter password'
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    className='userNameupInput'
+                  ></input>
+                </div>
+                <div className='userUpdateItem'>
+                  <label>Confirm Password</label>
+                  <input
+                    type='password'
+                    placeholder='Confirm password'
+                    value={confirmPassword}
+                    onChange={(e) => setConfirmPassword(e.target.value)}
+                    className='userNameupInput'
+                  ></input>
+                </div>
+                {/* <div className='userUpdateItem'>
                 <label>Phone</label>
                 <input
                   type='number'
@@ -136,7 +142,7 @@ function Protfolio({ location, history }) {
                   className='userNameupInput'
                 ></input>
               </div> */}
-              {/* <div className='userUpdateItem'>
+                {/* <div className='userUpdateItem'>
                 <label>Location</label>
                 <input
                   type='text'
@@ -144,9 +150,10 @@ function Protfolio({ location, history }) {
                   className='userNameupInput'
                 ></input>
               </div> */}
-              <button className='userupdatebutton'>Update</button>
-            </div>
-          </form>
+                <button className='userupdatebutton'>Update</button>
+              </div>
+            </form>
+          )}
         </div>
       </div>
     </div>
