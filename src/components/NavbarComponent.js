@@ -28,7 +28,7 @@ const NavbarComponent = () => {
       <Navbar collapseOnSelect expand='lg' bg='dark' variant='dark'>
         <Container>
           <LinkContainer to='/'>
-            <Navbar.Brand>Investick</Navbar.Brand>
+            <Navbar.Brand>Eztrade</Navbar.Brand>
           </LinkContainer>
 
           <Navbar.Toggle aria-controls='responsive-navbar-nav' />
