@@ -21,6 +21,7 @@ const NavbarComponent = () => {
   const logoutHandler = () => {
     dispatch(logout())
   }
+  
  
   return (
     <>

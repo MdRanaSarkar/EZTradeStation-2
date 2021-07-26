@@ -39,7 +39,7 @@ export const login = (email, password) => async (dispatch) => {
     }
 
     const { data } = await axios.post(
-      'https://eztradestation.herokuapp.com/api/users/login/',
+      '/api/users/login/',
       { username: email, password: password },
       config
     )
@@ -81,7 +81,7 @@ export const register = (name, email, password) => async (dispatch) => {
     }
 
     const { data } = await axios.post(
-      'https://eztradestation.herokuapp.com/api/users/register/',
+      '/api/users/register/',
       { name: name, email: email, password: password },
       config
     )
@@ -126,7 +126,7 @@ export const getUserDetails = (id) => async (dispatch, getState) => {
     }
 
     const { data } = await axios.get(
-      `https://eztradestation.herokuapp.com/api/users/${id}/`,
+      `/api/users/${id}/`,
       config
     )
 
@@ -163,7 +163,7 @@ export const updateUserProfile = (user) => async (dispatch, getState) => {
     }
 
     const { data } = await axios.put(
-      `https://eztradestation.herokuapp.com/api/users/profile/update/`,
+      `/api/users/profile/update/`,
       user,
       config
     )
@@ -208,7 +208,7 @@ export const listUsers = () => async (dispatch, getState) => {
     }
 
     const { data } = await axios.get(
-      `https://eztradestation.herokuapp.com/api/users/`,
+      `/api/users/`,
       config
     )
 
@@ -245,7 +245,7 @@ export const deleteUser = (id) => async (dispatch, getState) => {
     }
 
     const { data } = await axios.delete(
-      `https://eztradestation.herokuapp.com/api/users/delete/${id}/`,
+      `/api/users/delete/${id}/`,
       config
     )
 
@@ -282,7 +282,7 @@ export const updateUser = (user) => async (dispatch, getState) => {
     }
 
     const { data } = await axios.put(
-      `https://eztradestation.herokuapp.com/api/users/update/${user._id}/`,
+      `/api/users/update/${user._id}/`,
       user,
       config
     )

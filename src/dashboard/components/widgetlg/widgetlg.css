@@ -1,0 +1,51 @@
+.Widgetlg{
+    flex: 2;
+    padding:20px;
+    -webkit-box-shadow: inset 0px 0px 10px -10px #000000; 
+    box-shadow:  0px -1px 15px -10px #000000;
+}
+
+.widgetlgtitle{
+    font-size:22px;
+    font-weight: 600;
+}
+.widgetlgimg{
+    height:40px;
+    width:40px;
+    border-radius:50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.widgetlgTable{
+    width:100%;
+    border-spacing: 20px;
+}
+.widgetlgTrTh{
+    text-align:left;
+
+}
+.widgetlgUser{
+    display:flex;
+    align-items:center;
+    font-weight:600
+}
+
+.widgetlgTrdate,.widgetlgTrAmount{
+    font-weight: 300;
+}
+
+.widgetlgButton{
+    padding:5px 7px 5px;
+    border:none;
+    border-radius: 10px;
+}
+
+.widgetlgButton.Approaved{
+    background-color:lightgreen;
+}
+.widgetlgButton.Declined{
+    background-color:lightcoral;
+}
+.widgetlgButton.Pending{
+    background-color:lightgoldenrodyellow;
+}

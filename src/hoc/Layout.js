@@ -3,10 +3,10 @@ import Navbar from '../components/NavbarComponent'
 import { Container } from 'react-bootstrap'
 const Layout = ({ children }) => {
   return (
-    <Container>
+    <>
       <Navbar />
-      {children}
-    </Container>
+      <Container>{children}</Container>
+    </>
   )
 }
 

@@ -1,0 +1,10 @@
+.Chart{
+    margin:20px;
+    padding:20px;
+    -webkit-box-shadow: inset 0px 0px 10px -10px #000000; 
+    box-shadow:  0px -1px 15px -10px #000000;
+    
+}
+.ChartTitle{
+    margin-bottom: 20px;
+}

@@ -1,0 +1,55 @@
+.widgetsm{
+    flex: 1;
+   padding:20px;
+   -webkit-box-shadow: inset 0px 0px 10px -10px #000000; 
+   box-shadow:  0px -1px 15px -10px #000000;
+}
+.widgetsmTitle{
+    font-size:32px;
+    font-weight:600;
+}
+.widgetsmImage{
+    height:40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.widgetsmList{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+.widgetsmItem{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    margin:20px 0px;
+
+}
+.widgetsmuser{
+    display:flex;
+    flex-direction:column;
+}
+
+.widgetsmUsername{
+    font-weight:600;
+}
+.widgetsmUserTitle{
+    font-weight:300;
+}
+
+.Widgetsmbutton{
+    display:flex;
+    align-items:center;
+    border:none;
+    border-radius:10px;
+    cursor: pointer;
+    padding:7px 10px;
+    background: color #eeeef7;
+    color:#555;
+
+}
+.widgetsmicon{
+    font-size:16px;
+    margin-right:5px;
+}

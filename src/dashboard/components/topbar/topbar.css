@@ -1,0 +1,57 @@
+.topbar{
+    width:100%;
+    height:50px;
+    background-color: white;
+}
+
+.topbarwrapper{
+    height:100%;
+    padding:0px 20px;
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    font-weight: bold;
+    font-size:30px;
+    color: darkblue;
+    cursor: pointer
+}
+
+.topbarright{
+    display: flex;
+    align-items: center;
+}
+
+.iconContainer{
+position: relative;
+cursor: pointer;
+margin-right:10px;
+color:#555;
+}
+
+.topiconbadge{
+    height:15px;
+    width:15px;
+    position:absolute;
+    top:-5px;
+    right:5px;
+    background-color:red;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:10px;
+    
+
+
+}
+
+.Avatar{
+    height:30px;
+    width:30px;
+    border-radius:50%;
+    margin-right:10px;
+
+}
